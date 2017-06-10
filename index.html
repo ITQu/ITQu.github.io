@@ -4,12 +4,27 @@
 <meta charset="utf-8">
 <title>给您拜年啦</title>
 <style>
+#box{
+	width:165px;
+	height:220px;
+	position:relative;
+	}
 #div1{
 	width:165px;
 	height:220px;
 	position:fixed;
-	right:0;
-	bottom:0;
+	right:0px;
+	bottom:0px;
+	z-index:0.5;
+	}
+#div2{
+	width:165px;
+	height:220px;
+	position:fixed;
+	right:6px;
+	bottom:6px;
+	background:black;
+	opacity:0.5;
 	}
 body{
 	height:5000px;
@@ -24,7 +39,10 @@ ul,ol,p,em,dl,h1{}
 <body>
 	<h1>屈某第一个网站</h1>
 <div>块</div>
-<div id="div1"><img src="2.gif" /></div>
+<div id="box1">
+	<div id="div1"><img src="2.gif" /></div>
+	<div id="div2"></div>
+</div>
 <section>划分页面板块</section>
 <header>头部</header>
 <nav>导航</nav>
